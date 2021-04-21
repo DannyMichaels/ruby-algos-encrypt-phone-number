@@ -4,6 +4,8 @@
 
 def encrypt_phone_number(str)
 str.gsub(/[\d](?=.{5})/, "*")
+#     str[0..6] = '***-***'
+#     return str
 end
 
 puts encrypt_phone_number '718-867-5309'
